@@ -32,7 +32,6 @@ public class EncodingFilter implements Filter {
      * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
      */
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
@@ -44,4 +43,5 @@ public class EncodingFilter implements Filter {
      */
     public void init(FilterConfig fConfig) throws ServletException {
     }
+
 }
